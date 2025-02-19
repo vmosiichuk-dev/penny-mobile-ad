@@ -1,0 +1,23 @@
+:root {
+	--logo-min-height: 40px;
+	--logo-max-height: 65px;
+	--logo-bg-color: #cd1316;
+}
+
+.logo {
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	height: 7dvw;
+	min-height: var(--logo-min-height);
+	max-height: var(--logo-max-height);
+	background-color: var(--logo-bg-color);
+
+	& img {
+		position: absolute;
+		bottom: 0;
+		width: auto;
+		height: 100%;
+	}
+}

@@ -1,0 +1,90 @@
+@import './SlideOut.variables.css';
+
+.slide.slide-out {
+	grid-template-rows: var(--slide-out--grid-template-rows);
+	grid-template-columns: var(--slide-out--grid-template-columns);
+}
+
+.slide.slide-out .slide-item {
+	width: 50dvw;
+	grid-column: 1 / span 2;
+
+	&.slide-out--hl1 {
+		grid-row: 1;
+		min-width: var(--slide-out--hl1-min-width);
+		min-height: var(--slide-out--hl1-min-height);
+		max-width: var(--slide-out--hl1-max-width);
+		max-height: var(--slide-out--hl1-max-height);
+	}
+
+	&.slide-out--hl2 {
+		grid-row: 2;
+		min-width: var(--slide-out--hl2-min-width);
+		min-height: var(--slide-out--hl2-min-height);
+		max-width: var(--slide-out--hl2-max-width);
+		max-height: var(--slide-out--hl2-max-height);
+	}
+
+	&.slide-out--packshots {
+		grid-row: 3;
+		min-width: var(--slide-out--packshots-min-width);
+		min-height: var(--slide-out--packshots-min-height);
+		max-width: var(--slide-out--packshots-max-width);
+		max-height: var(--slide-out--packshots-max-height);
+		width: 60dvw;
+	}
+
+	&.slide-out--sl {
+		grid-row: 4 / span 2;
+		min-width: var(--slide-out--sl-min-width);
+		min-height: var(--slide-out--sl-min-height);
+		max-width: var(--slide-out--sl-max-width);
+		max-height: var(--slide-out--sl-max-height);
+	}
+
+	&.slide-out--gesture {
+		grid-row: 5 / span 2;
+		grid-column: 2;
+		min-width: var(--slide-out--gesture-min-width);
+		min-height: var(--slide-out--gesture-min-height);
+		max-width: var(--slide-out--gesture-max-width);
+		max-height: var(--slide-out--gesture-max-height);
+		align-self: flex-start;
+		width: 11dvw;
+	}
+
+	&.slide-out--arrow {
+		grid-row: 3 / span 2;
+		grid-column: 2;
+		min-width: var(--slide-out--arrow-min-width);
+		min-height: var(--slide-out--arrow-min-height);
+		max-width: var(--slide-out--arrow-max-width);
+		max-height: var(--slide-out--arrow-max-height);
+		align-self: flex-end;
+		width: 28dvw;
+
+		cursor: pointer;
+		position: relative;
+		z-index: 1;
+		border: none;
+		background-color: transparent;
+
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&.slide-out--cta {
+		grid-row: 6;
+		min-width: var(--slide-out--cta-min-width);
+		min-height: var(--slide-out--cta-min-height);
+		max-width: var(--slide-out--cta-max-width);
+		max-height: var(--slide-out--cta-max-height);
+
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

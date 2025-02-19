@@ -1,0 +1,28 @@
+.slider {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	min-height: var(--portrait-min-height);
+	max-height: var(--landscape-min-height);
+	max-width: 740px;
+	margin: auto;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: grid;
+}
+
+.slide-item {
+	height: auto;
+	align-self: center;
+	justify-self: center;
+}
+
+@media screen and (orientation: landscape) {
+	.slider {
+		min-height: var(--landscape-min-height);
+	}
+}

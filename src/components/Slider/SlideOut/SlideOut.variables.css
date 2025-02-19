@@ -1,0 +1,79 @@
+:root {
+	--slide-out--hl1-max-width: 573px;
+	--slide-out--hl1-max-height: 75px;
+	--slide-out--hl1-min-width: calc(var(--slide-out--hl1-max-width) / 2);
+	--slide-out--hl1-min-height: calc(var(--slide-out--hl1-max-height) / 2);
+
+	--slide-out--hl2-max-width: 484px;
+	--slide-out--hl2-max-height: 99px;
+	--slide-out--hl2-min-width: calc(var(--slide-out--hl2-max-width) / 2);
+	--slide-out--hl2-min-height: calc(var(--slide-out--hl2-max-height) / 2);
+
+	--slide-out--packshots-max-width: 461px;
+	--slide-out--packshots-max-height: 327px;
+	--slide-out--packshots-min-width: calc(
+		var(--slide-out--packshots-max-width) / 2
+	);
+	--slide-out--packshots-min-height: calc(
+		var(--slide-out--packshots-max-height) / 2
+	);
+
+	--slide-out--sl-max-width: 333px;
+	--slide-out--sl-max-height: 89px;
+	--slide-out--sl-min-width: calc(var(--slide-out--sl-max-width) / 2);
+	--slide-out--sl-min-height: calc(var(--slide-out--sl-max-height) / 2);
+
+	--slide-out--arrow-max-width: 180px;
+	--slide-out--arrow-max-height: 180px;
+	--slide-out--arrow-min-width: calc(var(--slide-out--arrow-max-width) / 2);
+	--slide-out--arrow-min-height: calc(var(--slide-out--arrow-max-height) / 2);
+
+	--slide-out--cta-max-width: 430px;
+	--slide-out--cta-max-height: 71px;
+	--slide-out--cta-min-width: calc(var(--slide-out--cta-max-width) / 2.15);
+	--slide-out--cta-min-height: calc(var(--slide-out--cta-max-height) / 2.15);
+
+	--slide-out--gesture-max-width: 92px;
+	--slide-out--gesture-max-height: 128px;
+	--slide-out--gesture-min-width: calc(
+		var(--slide-out--gesture-max-width) / 2.5
+	);
+	--slide-out--gesture-min-height: calc(
+		var(--slide-out--gesture-max-height) / 2.5
+	);
+
+	--slide-out--grid-template-row-hl1: minmax(
+		var(--slide-out--hl1-min-height),
+		1fr
+	);
+	--slide-out--grid-template-row-hl2: minmax(
+		var(--slide-out--hl2-min-height),
+		1fr
+	);
+	--slide-out--grid-template-row-packshots: minmax(
+		var(--slide-out--packshots-min-height),
+		3.25fr
+	);
+	--slide-out--grid-template-row-sl--1: minmax(
+		calc(var(--slide-out--sl-min-height) / 2),
+		0.5fr
+	);
+	--slide-out--grid-template-row-sl--2: minmax(
+		calc(var(--slide-out--sl-min-height) / 2),
+		0.5fr
+	);
+	--slide-out--grid-template-row-cta: minmax(
+		var(--slide-out--cta-min-height),
+		1fr
+	);
+	--slide-out--grid-template-row-logo: minmax(var(--logo-min-height), 0.35fr);
+
+	--slide-out--grid-template-columns: 2fr 1fr;
+	--slide-out--grid-template-rows: var(--slide-out--grid-template-row-hl1)
+		var(--slide-out--grid-template-row-hl2)
+		var(--slide-out--grid-template-row-packshots)
+		var(--slide-out--grid-template-row-sl--1)
+		var(--slide-out--grid-template-row-sl--2)
+		var(--slide-out--grid-template-row-cta)
+		var(--slide-out--grid-template-row-logo);
+}

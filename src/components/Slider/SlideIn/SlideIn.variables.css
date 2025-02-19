@@ -1,0 +1,113 @@
+:root {
+	--slide-in--cta-max-width: 430px;
+	--slide-in--cta-max-height: 71px;
+	--slide-in--cta-min-width: calc(var(--slide-in--cta-max-width) / 2.15);
+	--slide-in--cta-min-height: calc(var(--slide-in--cta-max-height) / 2.15);
+
+	--slide-in--hl1-max-width: 600px;
+	--slide-in--hl1-max-height: 30px;
+	--slide-in--hl1-min-width: calc(var(--slide-in--hl1-max-width) / 2);
+	--slide-in--hl1-min-height: calc(var(--slide-in--hl1-max-height) / 2);
+
+	--slide-in--hl2-max-width: 591px;
+	--slide-in--hl2-max-height: 118px;
+	--slide-in--hl2-min-width: calc(var(--slide-in--hl2-max-width) / 2);
+	--slide-in--hl2-min-height: calc(var(--slide-in--hl2-max-height) / 2);
+
+	--slide-in--img1-max-width: 174px;
+	--slide-in--img1-max-height: 229px;
+	--slide-in--img1-min-width: calc(var(--slide-in--img1-max-width) / 2);
+	--slide-in--img1-min-height: calc(var(--slide-in--img1-max-height) / 2);
+
+	--slide-in--img2-max-width: 122px;
+	--slide-in--img2-max-height: 126px;
+	--slide-in--img2-min-width: calc(var(--slide-in--img2-max-width) / 2);
+	--slide-in--img2-min-height: calc(var(--slide-in--img2-max-height) / 2);
+
+	--slide-in--img3-max-width: 82px;
+	--slide-in--img3-max-height: 36px;
+	--slide-in--img3-min-width: calc(var(--slide-in--img3-max-width) / 2);
+	--slide-in--img3-min-height: calc(var(--slide-in--img3-max-height) / 2);
+
+	--slide-in--img4-max-width: 172px;
+	--slide-in--img4-max-height: 172px;
+	--slide-in--img4-min-width: calc(var(--slide-in--img4-max-width) / 2);
+	--slide-in--img4-min-height: calc(var(--slide-in--img4-max-height) / 2);
+
+	--slide-in--img5-max-width: 265px;
+	--slide-in--img5-max-height: 340px;
+	--slide-in--img5-min-width: calc(var(--slide-in--img5-max-width) / 2);
+	--slide-in--img5-min-height: calc(var(--slide-in--img5-max-height) / 2);
+
+	--slide-in--img6-max-width: 75px;
+	--slide-in--img6-max-height: 58px;
+	--slide-in--img6-min-width: calc(var(--slide-in--img6-max-width) / 2);
+	--slide-in--img6-min-height: calc(var(--slide-in--img6-max-height) / 2);
+
+	--slide-in--img7-max-width: 274px;
+	--slide-in--img7-max-height: 365px;
+	--slide-in--img7-min-width: calc(var(--slide-in--img7-max-width) / 2);
+	--slide-in--img7-min-height: calc(var(--slide-in--img7-max-height) / 2);
+
+	--slide-in--legal-max-width: 554px;
+	--slide-in--legal-max-height: 16px;
+	--slide-in--legal-min-width: calc(var(--slide-in--legal-max-width) / 2);
+	--slide-in--legal-min-height: calc(var(--slide-in--legal-max-height) / 2);
+
+	--slide-in--grid-template-row-hl1: minmax(
+		var(--slide-in--hl1-min-height),
+		0.55fr
+	);
+	--slide-in--grid-template-row-hl2: minmax(
+		var(--slide-in--hl2-min-height),
+		1.2fr
+	);
+	--slide-in--grid-template-row-img1: minmax(
+		var(--slide-in--img1-min-height),
+		1.75fr
+	);
+	--slide-in--grid-template-row-img2: minmax(
+		var(--slide-in--img2-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-img3: minmax(
+		var(--slide-in--img3-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-img4: minmax(
+		var(--slide-in--img4-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-img5: minmax(
+		var(--slide-in--img5-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-img6: minmax(
+		var(--slide-in--img6-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-img7: minmax(
+		var(--slide-in--img7-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-cta: minmax(
+		var(--slide-in--cta-min-height),
+		1fr
+	);
+	--slide-in--grid-template-row-legal: minmax(
+		var(--slide-in--legal-min-height),
+		0.3fr
+	);
+	--slide-in--grid-template-row-logo: minmax(var(--logo-min-height), 0.75fr);
+
+	--slide-in--grid-template-columns: 1.5fr 1.25fr 0.5fr 2.2fr;
+	--slide-in--grid-template-rows: var(--slide-in--grid-template-row-hl1)
+		var(--slide-in--grid-template-row-hl2)
+		var(--slide-in--grid-template-row-img1)
+		var(--slide-in--grid-template-row-img2)
+		var(--slide-in--grid-template-row-img3)
+		var(--slide-in--grid-template-row-img4)
+		var(--slide-in--grid-template-row-cta)
+		var(--slide-in--grid-template-row-legal)
+		var(--slide-in--grid-template-row-logo);
+}
